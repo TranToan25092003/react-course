@@ -1,0 +1,14 @@
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v3
+      - name: build
+        run: |
+          npm build
+      - name: report
+        run: |
+          echo 'build sucessful'
