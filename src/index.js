@@ -1,9 +1,5 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-
-const Greeting = () => {
-  return <h2>First component</h2>;
-};
-
-const App = ReactDOM.createRoot(document.getElementById("root"));
-App.render(<Greeting></Greeting>);
+import { App } from "./app";
+import "./index.css";
+const Root = ReactDOM.createRoot(document.getElementById("root"));
+Root.render(<App></App>);
