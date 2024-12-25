@@ -10,7 +10,7 @@ jobs:
         run: npm ci
       - name: build
         run: |
-          npm run start
+          npm run build
       - name: report
         if: failure()
         run: |
